@@ -1,9 +1,18 @@
-body {
-  background-color: powderblue;
+header img {
+	width: 200px;
+	height: auto;
+	margin: 10px;
 }
-h1 {
-  color: Black;
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
-p {
-  color: Black;
+
+main img {
+	width: 300px;
+	height: auto;
+	margin: 20px;
 }

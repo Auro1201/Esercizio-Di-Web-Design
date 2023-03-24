@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Azienda di Trasporti</title>
-	<style>
-		body {
-			background-color: blue;
-		}
-		header img {
-			width: 200px;
-			height: auto;
-			margin: 10px;
-		}
-		main {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
-		}
-		main img {
-			width: 300px;
-			height: auto;
-			margin: 20px;
-		}
-	</style>
+	<title>Azienda Trasporti</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header>
-		<img src="logo.png" alt="Logo Azienda di Trasporti">
+		<h1>Azienda Trasporti</h1>
 		<nav>
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Servizi</a></li>
-				<li><a href="#">Contatti</a></li>
+				<li><a href="#servizi">Servizi</a></li>
+				<li><a href="#flotta">Flotta</a></li>
+				<li><a href="#contatti">Contatti</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<img src="trasporto-merci.jpg" alt="Trasporto merci">
-		<img src="trasporto-persone.jpg" alt="Trasporto persone">
-		<img src="logistica.jpg" alt="Logistica">
+		<section id="servizi">
+			<h2>Servizi</h2>
+			<p>Offriamo servizi di trasporto su strada e su ferrovia per merci di ogni genere.</p>
+			<ul>
+				<li>Trasporto merci su strada</li>
+				<li>Trasporto merci su ferrovia</li>
+				<li>Trasporto merci pericolose</li>
+				<li>Trasporto refrigerato</li>
+			</ul>
+		</section>
+		<section id="flotta">
+			<h2>Flotta</h2>
+			<p>La nostra flotta è composta da veicoli moderni e sicuri, dotati di sistemi di sicurezza avanzati.</p>
+			<ul>
+				<li>Camion</li>
+				<li>Treni merci</li>
+				<li>Furgoni refrigerati</li>
+			</ul>
+		</section>
+		<section id="contatti">
+			<h2>Contatti</h2>
+			<p>Per maggiori informazioni sui nostri servizi, contattaci:</p>
+			<ul>
+				<li>Email: info@aziendatrasporti.com</li>
+				<li>Telefono: +39 0123456789</li>
+				<li>Indirizzo: Via dei Trasporti, 1</li>
+				<li>Città: Roma</li>
+			</ul>
+		</section>
 	</main>
 	<footer>
-		<p>&copy; Azienda di Trasporti 2023</p>
+		<p>Copyright © 2023 Azienda Trasporti</p>
 	</footer>
 </body>
 </html>

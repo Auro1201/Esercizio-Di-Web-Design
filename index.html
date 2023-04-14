@@ -1,68 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Azienda Trasporti</title>
-	<meta charset="UTF-8">
+	<title>Azienda di Trasporti</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://maps.googleapis.com/maps/api/js?key=API_KEY"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var speed = 5000; // tempo in millisecondi tra uno scorrimento e l'altro
+			var slides = $(".slider li").length; // numero di slide totali
+			var currentSlide = 1; // slide attuale
+
+			// Nascondo tutte le slide tranne la prima
+			$(".slider li:not(:first-child)").hide();
+
+			// Funzione per passare alla slide successiva
+			function nextSlide() {
+				$(".slider li:nth-child(" + currentSlide + ")").fadeOut();
+				if(currentSlide == slides) {
+					currentSlide = 1;
+				} else {
+					currentSlide++;
+				}
+				$(".slider li:nth-child(" + currentSlide + ")").fadeIn();
+			}
+
+			// Avvio lo scorrimento automatico delle slide
+			var timer = setInterval(nextSlide, speed);
+
+			// Pausa lo scorrimento automatico quando l'utente passa sopra il box delle slide
+			$(".slider").hover(function(){
+				clearInterval(timer);
+			}, function(){
+				timer = setInterval(nextSlide, speed);
+			});
+		});
+	</script>
 </head>
-<body>
+<body onload="initMap()">
 	<header>
-		<img src="https://www.vp360web.com/wp-content/uploads/2020/10/logoblu-300x300.png" alt="Logo Azienda Trasporti">
-		<h1>Azienda Trasporti</h1>
+		<img src="https://www.vp360web.com/wp-content/uploads/2020/10/logoblu-300x300.png" class="logo">
 		<nav>
 			<ul>
-				<li><a href="#servizi">Servizi</a></li>
-				<li><a href="#flotta">Flotta</a></li>
-				<li><a href="#contatti">Contatti</a></li>
-			<li><a href="#contatti">Galleria</a></li>
-			  
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Servizi</a></li>
+				<li><a href="#">Contatti</a></li>
+        <li><a href="#">Chi siamo</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2821.077017261747!2d7.599193415755492!3d45.003057872114994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47881384c7cbb1a1%3A0xa7f721b3220914cf!2sVia%20Carso%2C%2010%2C%2010092%20Borgaretto%20TO!5e0!3m2!1sit!2sit!4v1679865072754!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"  referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <section id="servizi">
-			<h2>Servizi</h2>
-			<p>Offriamo servizi di trasporto su strada e su ferrovia per merci di ogni genere.</p>
-			<ul>
-				<li>Trasporto merci su strada</li>
-				<li>Trasporto merci su ferrovia</li>
-				<li>Trasporto merci pericolose</li>
-				<li>Trasporto refrigerato</li>
-			</ul>
-		</section>
-		<section id="flotta">
-			<h2>Flotta</h2>
-			<p>La nostra flotta è composta da veicoli moderni e sicuri, dotati di sistemi di sicurezza avanzati.</p>
-			<img src="https://www.autogruvaldelsa.it/wp-content/uploads/2019/05/autocarri-con-gru.png" alt="Camion" style="width: 500px;">
-			<ul>
-				<li>Camion</li>
-				<li>Treni merci</li>
-				<li>Furgoni refrigerati</li>
-			</ul>
-		</section>
-		<section id="Galleria">
-			<h2>Galleria</h2>
-      <div class="container-img">
-  <img src="immagine1.jpg">
-  <img src="immagine2.jpg">
-  <img src="immagine3.jpg">
-</div>
-
-      <section id="contatti">
-			<h2>Contatti</h2>
-			<p>Per maggiori informazioni sui nostri servizi, contattaci:</p>
-			<ul>
-				<li>Email: info@aziendatrasporti.com</li>
-				<li>Telefono: +39 0123456789</li>
-				<li>Indirizzo: Via dei Trasporti, 1</li>
-				<li>Città: Roma</li>
-			</ul>
-		</section>
+		<h1>Benvenuti all'Azienda di Trasporti</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac neque vel tortor dapibus malesuada. Praesent a nulla convallis, malesuada ipsum eget, fringilla nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed bibendum sodales elit. Nulla cursus facilisis nunc, id pretium sapien malesuada in. Nunc rhoncus ex in magna luctus eleifend. Proin malesuada, ipsum vel feugiat aliquam, velit diam volutpat quam, ut iaculis justo augue non leo.</p>
+		<ul class="slider">
+			<li><img src="foto1.jpg"></li>
+			<li><img src="foto2.jpg"></li>
+			<li><img src="foto3.jpg"></li>
+		</ul>
 	</main>
 	<footer>
-		<p>Copyright © 2023 Azienda Trasporti</p>
-	</footer>
-</body>
-</html>
+		<div id="map"></div>
+		<nav class="footer-nav">
+
+	

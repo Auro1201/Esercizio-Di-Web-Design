@@ -1,1 +1,116 @@
+ /* Stili per il logo e il nome dell'azienda */
+        .logo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background-color: 	#c0c0c0;
+            color: #fff;
+        }
+
+        .logo img {
+            max-height: 150%;
+            max-width: 60%;
+            object-fit: contain;
+}
+
+        .logo h1 {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        /* Stili per il menu */
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #34495e;
+            color: #fff;
+            height: 70px;
+            padding: 0 20px;
+        }
+
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .menu li {
+            margin: 0 20px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 10px;
+        }
+
+        /* Stili per il contenuto */
+        .content {
+            padding: 100px;
+            background-color: #f2f2f2;
+        }
+
+        .content h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Media query per layout responsive */
+        @media (max-width: 768px) {
+            .logo {
+                height: 80px;
+            }
+
+            .logo img {
+                max-height: 100%;
+                max-width: 100%;
+            }
+
+            .logo h1 {
+                font-size: 1.2rem;
+                margin-top: 5px;
+            }
+
+            .menu {
+                height: auto;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+            .menu ul {
+                flex-direction: column;
+            }
+
+            .menu li {
+                margin: 10px 0;
+            }
+        }
+  
+.scrolling-images {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.scrolling-images img {
+  display: inline-block;
+  max-width:100%;
+  height: auto;
+}
 

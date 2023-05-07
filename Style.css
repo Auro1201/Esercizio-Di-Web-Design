@@ -1,27 +1,19 @@
 
-        /* Stili per il logo e il nome dell'azienda */
-        .logo {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100px;
-            background-color: 	#c0c0c0;
-            color: #fff;
-        }
+       
 
-        .logo img {
-            max-height: 150%;
-            max-width: 60%;
-            object-fit: contain;
+    /* Stili per il logo */
+    .logo {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+       .logo {
+  width: 200px;
+  height: 200px;
+         
 }
 
-        .logo h1 {
-            font-size: 1.5rem;
-            margin-top: 10px;
-        }
-
-        /* Stili per il menu */
+/* Stili per il menu */
         .menu {
             display: flex;
             justify-content: space-between;
@@ -29,7 +21,7 @@
             background-color: #34495e;
             color: #fff;
             height: 70px;
-            padding: 0 20px;
+            padding: 0 5px;
         }
 
         .menu ul {
@@ -43,7 +35,7 @@
         }
 
         .menu li {
-            margin: 0 20px;
+            margin: 0 10px;
         }
 
         .menu a {
@@ -71,6 +63,62 @@
             line-height: 1.5;
             margin-bottom: 20px;
         }
+
+
+
+/* servizi */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            max-width: 100%;
+        }
+
+        .item {
+            flex: 0 0 calc(25% - 1px);
+            margin: 100px;
+            text-align: center;
+        }
+
+        .item img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .item h3 {
+            margin-top: 10px;
+        }
+   
+/*Preventivo*/
+
+
+    /* Stili per il tasto */
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20vh;
+    }
+
+    .button {
+      padding: 15px 30px;
+      font-size: 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Regole per la responsività */
+    @media (max-width: 768px) {
+      /* Stili diversi per dispositivi con larghezza massima di 768px */
+      .center {
+        height: auto;
+      }
+    }
 
         /* Media query per layout responsive */
         @media (max-width: 768px) {
@@ -114,3 +162,29 @@
   max-width:100%;
   height: auto;
 }
+.container {
+  display: flex;
+}
+
+.object1, .object2 {
+  width: 20%;
+  /* Aggiungi altri stili a seconda delle tue esigenze */
+}
+
+    .social-icons {
+      text-align: left;
+      margin: 20px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    /* Stile per la striscia di copyright */
+    .copyright {
+      background-color: #708090;
+      padding: 10px;
+      text-align: center;
+    }
+

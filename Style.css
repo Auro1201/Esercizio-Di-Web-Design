@@ -1,7 +1,4 @@
-
-       
-
-    /* Stili per il logo */
+ /* Stili per il logo */
     .logo {
       max-width: 100%;
       display: block;
@@ -91,8 +88,33 @@
             margin-top: 10px;
         }
    
-/*Preventivo*/
+/*vison mission e values*/
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
 
+        .box {
+            background-color: lightgray;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          background-color:  #708090;
+        }
+
+        .box h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .box p {
+            font-size: 18px;
+        }
+    
 
     /* Stili per il tasto */
     .center {
@@ -105,7 +127,7 @@
     .button {
       padding: 15px 30px;
       font-size: 20px;
-      background-color: #4CAF50;
+      background-color: #4682b4;
       color: white;
       border: none;
       border-radius: 5px;
@@ -187,3 +209,5 @@
       padding: 10px;
       text-align: center;
     }
+
+       

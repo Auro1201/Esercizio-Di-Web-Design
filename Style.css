@@ -15,7 +15,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #34495e;
+            background-color: #2a2c47;
             color: #fff;
             height: 70px;
             padding: 0 5px;
@@ -47,7 +47,7 @@
         /* Stili per il contenuto */
         .content {
             padding: 100px;
-            background-color: #f2f2f2;
+            background-color: #344d83;
         }
 
         .content h1 {
@@ -61,6 +61,23 @@
             margin-bottom: 20px;
         }
 
+/* foto scorrevoli */
+
+
+    .slideshow-container {
+      position: relative;
+      max-width: 70%;
+      margin: auto;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .slideshow-image {
+      width: 100%;
+      height: auto;
+    }
 
 
 /* servizi */
@@ -103,7 +120,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-          background-color:  #708090;
+          background-color:  #ffffff;
         }
 
         .box h2 {
@@ -127,8 +144,8 @@
     .button {
       padding: 15px 30px;
       font-size: 20px;
-      background-color: #4682b4;
-      color: white;
+      background-color: #ffffff;
+      color:black;
       border: none;
       border-radius: 5px;
       cursor: pointer;
@@ -205,9 +222,8 @@
 
     /* Stile per la striscia di copyright */
     .copyright {
-      background-color: #708090;
+      background-color: #ffffff;
       padding: 10px;
       text-align: center;
     }
 
-       

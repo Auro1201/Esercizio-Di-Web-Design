@@ -1,229 +1,174 @@
  /* Stili per il logo */
-    .logo {
-      max-width: 100%;
-      display: block;
-      margin: 0 auto;
-    }
-       .logo {
-  width: 200px;
-  height: 200px;
-         
+.container {
+  text-align: center;
 }
+
+.logo {
+  display: block;
+  margin: 2 auto;
+}
+
+.title {
+  text-align: left;
+  margin-top: 70px;
+  font-size: 60px;
+  color:#2a2c47;
+}
+
 
 /* Stili per il menu */
-        .menu {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #2a2c47;
-            color: #fff;
-            height: 70px;
-            padding: 0 5px;
-        }
-
-        .menu ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        .menu li {
-            margin: 0 10px;
-        }
-
-        .menu a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            padding: 10px;
-        }
-
-        /* Stili per il contenuto */
-        .content {
-            padding: 100px;
-            background-color: #344d83;
-        }
-
-        .content h1 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .content p {
-            font-size: 1.2rem;
-            line-height: 1.5;
-            margin-bottom: 20px;
-        }
-
-/* foto scorrevoli */
-
-
-    .slideshow-container {
-      position: relative;
-      max-width: 70%;
-      margin: auto;
-    }
-
-    .mySlides {
-      display: none;
-    }
-
-    .slideshow-image {
-      width: 100%;
-      height: auto;
-    }
-
-
-/* servizi */
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: flex-start;
-            max-width: 100%;
-        }
-
-        .item {
-            flex: 0 0 calc(25% - 1px);
-            margin: 100px;
-            text-align: center;
-        }
-
-        .item img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-        .item h3 {
-            margin-top: 10px;
-        }
-   
-/*vison mission e values*/
-        .container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 20px;
-        }
-
-        .box {
-            background-color: lightgray;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-          background-color:  #ffffff;
-        }
-
-        .box h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .box p {
-            font-size: 18px;
-        }
-    
-
-    /* Stili per il tasto */
-    .center {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 20vh;
-    }
-
-    .button {
-      padding: 15px 30px;
-      font-size: 20px;
-      background-color: #ffffff;
-      color:black;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    /* Regole per la responsività */
-    @media (max-width: 768px) {
-      /* Stili diversi per dispositivi con larghezza massima di 768px */
-      .center {
-        height: auto;
-      }
-    }
-
-        /* Media query per layout responsive */
-        @media (max-width: 768px) {
-            .logo {
-                height: 80px;
-            }
-
-            .logo img {
-                max-height: 100%;
-                max-width: 100%;
-            }
-
-            .logo h1 {
-                font-size: 1.2rem;
-                margin-top: 5px;
-            }
-
-            .menu {
-                height: auto;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: center;
-            }
-
-            .menu ul {
-                flex-direction: column;
-            }
-
-            .menu li {
-                margin: 10px 0;
-            }
-        }
-  
-.scrolling-images {
-  overflow-x: scroll;
-  white-space: nowrap;
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2c47;
+  color: #fff;
+  height: 70px;
+  padding: 0 5px;
 }
 
-.scrolling-images img {
-  display: inline-block;
-  max-width:100%;
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+/* Stili per il contenuto */
+.content {
+  padding: 100px;
+  background-color: #344d83;
+}
+
+.content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Foto scorrevoli */
+.slideshow-container {
+  position: relative;
+  max-width: 70%;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.slideshow-image {
+  width: 100%;
   height: auto;
 }
+
+/* Servizi */
 .container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 100%;
 }
 
-.object1, .object2 {
-  width: 20%;
-  /* Aggiungi altri stili a seconda delle tue esigenze */
+.item {
+  flex: 0 0 calc(25% - 1px);
+  margin: 100px;
+  text-align: center;
 }
 
-    .social-icons {
-      text-align: left;
-      margin: 20px;
-    }
+.item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
-    .social-icons a {
-      display: inline-block;
-      margin-right: 10px;
-    }
+.item h3 {
+  margin-top: 10px;
+}
 
-    /* Stile per la striscia di copyright */
-    .copyright {
-      background-color: #ffffff;
-      padding: 10px;
-      text-align: center;
-    }
+/* Visione, Missione e Valori */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.box {
+  background-color: lightgray;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color:  #2a2c47;
+}
+
+.box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 18px;
+}
+
+/* Stili per il tasto */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.button {
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Regole per la responsività */
+@media (max-width: 768px) {
+  /* Stili diversi per dispositivi con larghezza massima di 768px */
+  .center {
+    height: auto;
+  }
+
+  .logo {
+    height: 80px;
+  }
+
+  .logo img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .logo h1 {
+   
 

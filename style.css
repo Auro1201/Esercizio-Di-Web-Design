@@ -1,3 +1,21 @@
+/* Stili per il logo */
+.container {
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin: 2 auto;
+}
+
+.title {
+  text-align: left;
+  margin-top: 70px;
+  font-size: 60px;
+  color:#2a2c47;
+}
+
+
 /* Stili per il menu */
 .menu {
   display: flex;
@@ -153,6 +171,4 @@
 
   .logo h1 {
    
-
-
 

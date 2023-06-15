@@ -1,173 +1,561 @@
-/* Stili per il logo */
-.container {
-  text-align: center;
-}
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titolo della pagina</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
 
-.logo {
-  display: block;
-  margin: 2 auto;
-}
+ 
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/logo%20bianco.png?raw=true" alt="Logo">
+    <h1 class="title">ZAMBANO TRASPORTI</h1>
+  </div>
 
-.title {
-  text-align: left;
-  margin-top: 70px;
-  font-size: 60px;
-  color:white;
-}
+  <nav class="menu">
+    <ul>
+      <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#lavori"><i class="fas fa-camera-retro"></i> I nostri lavori</a></li>
+      <li><a href="#servizi"><i class="fas fa-industry"></i> Servizi</a></li>
+  
+      <li><a href="#referenze"><i class="fas fa-map-marker-alt"></i> Referenze</a></li> 
+      <li><a href="#dove"><i class="fas fa-map-marker-alt"></i> Dove trovarci</a></li>
+      <li><a href="#contatti"><i class="fas fa-envelope"></i> Contatti</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <h1 id="home" style="color:white; font-family: 'Water Brush', sans-serif;">Benvenuti nella nostra azienda</h1>
+    <p style="color:white;">Benvenuti a Zamabno Trasporti S.A.S!
+
+Siamo un'azienda familiare con una storia di successo che abbraccia oltre 60 anni di esperienza nel settore dei trasporti. L'azienda nasce nel 1963 per mano di Edmondo Zambano per poi successivamente passare al geometra Anselmo Zambano dopo un pò di anni. Sin dalla nostra fondazione, ci siamo dedicati a fornire soluzioni affidabili e su misura per le esigenze di trasporto dei nostri clienti. Nel corso degli anni, ci siamo evoluti e specializzati per diventare leader nel trasporto di oggetti di grandi dimensioni.
+
+La nostra passione per l'eccellenza e l'attenzione ai dettagli ci hanno permesso di sviluppare una flotta di veicoli all'avanguardia e di formare un piccolo team di esperti altamente qualificati. Siamo orgogliosi di poter offrire una vasta gamma di servizi di trasporto, inclusi trasporti pesanti, trasporti speciali e trasporti eccezionali.
+
+Sappiamo che ogni carico è unico e richiede un approccio personalizzato. I nostri professionisti altamente specializzati lavorano a stretto contatto con i nostri clienti per capire le loro esigenze specifiche e offrire soluzioni su misura. Dalla pianificazione logistica alla gestione delle autorizzazioni, ci occupiamo di tutto il processo per garantire un trasporto sicuro e puntuale.
+
+La nostra reputazione si basa sull'affidabilità, sull'efficienza e sulla cura che mettiamo in ogni trasporto che gestiamo. Siamo consapevoli dell'importanza dei vostri carichi e ci impegniamo a trattarli con la massima attenzione e sicurezza. La vostra soddisfazione è la nostra priorità assoluta.
+
+Se state cercando una società di trasporti affidabile, professionale e con esperienza nel settore dei trasporti di oggetti di grandi dimensioni, Zamabno Trasporti è qui per servirvi. Contattateci oggi stesso per discutere delle vostre esigenze di trasporto e scoprire come possiamo aiutarvi a raggiungere i vostri obiettivi.</p>
+  </main>
 
 
-/* Stili per il menu */
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #2a2c47;
-  color: #fff;
-  height: 70px;
-  padding: 0 5px;
-}
 
-.menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
-}
+  <style>
+    body {
+      background-image: url(https://img.freepik.com/free-photo/white-background_23-2147730801.jpg);
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto Flex', sans-serif;
+    }
 
-.menu li {
-  margin: 0 10px;
-}
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
 
-.menu a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 10px;
-}
+    .box {
+      margin: 20px;
+      text-align: center;
+    }
 
-/* Stili per il contenuto */
-.content {
-  padding: 100px;
-  background-color: #344d83;
-}
+    .slideshow-container {
+      position: relative;
+      max-width: 90%;
+    }
 
-.content h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
+    .mySlides {
+      display: none;
+    }
 
-.content p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
+    .slideshow-image {
+      width: 100%;
+      height: auto;
+    }
+  </style>
 
-/* Foto scorrevoli */
-.slideshow-container {
-  position: relative;
-  max-width: 70%;
-  margin: auto;
-}
+ 
 
-.mySlides {
-  display: none;
-}
 
-.slideshow-image {
-  width: 100%;
-  height: auto;
-}
+<h1 id="lavori" style="color:black; text-align: center">I nostri lavori</h1>
 
-/* Servizi */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 100%;
-}
+  
+    <title>Pagina con sfondo fisso</title>
+  <style>
+    body {
+      background-image: url("https://www.tlhlogistica.com/wp-content/uploads/2022/08/transporte-adr.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  </style>
+  
+  
+  
 
-.item {
-  flex: 0 0 calc(25% - 1px);
-  margin: 100px;
-  text-align: center;
-}
 
-.item img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+  <div class="slideshow-container">
+    <div class="mySlides">
+      <img class="slideshow-image" src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/1.jpg?raw=true" alt="Immagine 1">
+    </div>
 
-.item h3 {
-  margin-top: 10px;
-}
+    <div class="mySlides">
+      <img class="slideshow-image" src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/2.jpg?raw=true" alt="Immagine 2">
+    </div>
 
-/* Visione, Missione e Valori */
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-}
+    <div class="mySlides">
+      <img class="slideshow-image" src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/3.jpg?raw=true" alt="Immagine 3">
+    </div>
+    
+    <div class="mySlides">
+      <img class="slideshow-image" src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/4.jpg?raw=true" alt="Immagine 4">
+    </div>
+    
+    <div class="mySlides">
+      <img class="slideshow-image" src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/5.jpg?raw=true" alt="Immagine 5">
+    </div>
+    
+    <div class="mySlides">
+      <img class="slideshow-image" src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/6.jpg?raw=true" alt="Immagine 6">
+    </div>
+    
+    <div class="mySlides">
+      <img class="slideshow-image" src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/7.jpg?raw=true" alt="Immagine 7">
+    </div>
+  </div>
 
-.box {
-  background-color: lightgray;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color:  #2a2c47;
-}
+  <script>
+    var slideIndex = 0;
+    showSlides();
 
-.box h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // Cambia immagine ogni 2 secondi
+    }
+  </script>
 
-.box p {
-  font-size: 18px;
-}
+ <div class="container">
+    <div class="box">
+      <h2>Vision</h2>
+      <p> Vogliamo essere riconosciuti come il partner di fiducia per le esigenze di trasporto più complesse e sfidanti. Attraverso la nostra dedizione al servizio clienti, la nostra competenza tecnica e il nostro impegno per l'eccellenza operativa, puntiamo a stabilire nuovi standard di qualità nel settore. Sogniamo un futuro in cui Zamabno Trasporti sia sinonimo di affidabilità, efficienza e soluzioni personalizzate per ogni sfida di trasporto.</p>
+    </div>
+    <div class="box">
+      <h2>Mission</h2>
+      <p>
+La nostra missione è fornire servizi di trasporto di oggetti di grandi dimensioni di alta qualità, che superino le aspettative dei nostri clienti in termini di sicurezza, affidabilità ed efficienza. Ci impegniamo a offrire soluzioni personalizzate, utilizzando le nostre competenze tecniche e la nostra flotta all'avanguardia per affrontare le sfide più complesse nel campo dei trasporti. Siamo guidati dalla passione per il servizio clienti e ci sforziamo di costruire relazioni a lungo termine basate sulla fiducia e sulla collaborazione. Investiamo costantemente nella formazione e nello sviluppo del nostro team, al fine di mantenere l'eccellenza operativa e di adattarci alle mutevoli esigenze del settore dei trasporti. Siamo orgogliosi del nostro contributo al successo dei nostri clienti, facilitando il trasferimento efficiente e sicuro dei loro carichi di grandi dimensioni.</p>
+    </div>
+    <div class="box">
+      <h2>Values</h2>
+      <p>Il nostro valore fondamentale è l'impegno per l'eccellenza. Ci impegniamo a fornire servizi di trasporto di oggetti di grandi dimensioni che rappresentino la massima qualità e professionalità. Siamo guidati dalla costante ricerca della perfezione in tutto ciò che facciamo, dalla pianificazione logistica alla consegna finale. Mettiamo l'accento sull'attenzione ai dettagli e sulla cura nella gestione dei carichi, garantendo che ogni trasporto venga eseguito con la massima precisione e sicurezza. Ci preoccupiamo sinceramente del successo dei nostri clienti e lavoriamo instancabilmente per superare le loro aspettative. La nostra dedizione all'eccellenza si riflette in ogni aspetto del nostro lavoro, offrendo un valore tangibile e duraturo ai nostri clienti.</p>
+    </div>
+  </div>
+ <h1 id="referenze" style="color:black; text-align: center">Referenze</h1>
+<h2 style="text-align: center; color:black">Trasporto per un'azienda vinicola</h2>
 
-/* Stili per il tasto */
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20vh;
-}
+  
+  
+  
+  
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Stili personalizzati per il grid delle immagini */
+    .my-image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 
-.button {
-  padding: 15px 30px;
-  font-size: 20px;
-  background-color: #ffffff;
-  color: black;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+    .my-image-grid .image-container {
+      flex-basis: calc(33.33% - 20px);
+      margin-bottom: 20px;
+    }
 
-/* Regole per la responsività */
-@media (max-width: 768px) {
-  /* Stili diversi per dispositivi con larghezza massima di 768px */
-  .center {
-    height: auto;
-  }
+    .my-image-grid .image-container img {
+      width: 100%;
+      height: auto;
+    }
 
-  .logo {
-    height: 80px;
-  }
+    /* Altri stili della tua pagina */
+    /* ... */
 
-  .logo img {
-    max-height: 100%;
-    max-width: 100%;
-  }
+  </style>
 
-  .logo h1 {
-   
+
+  <div>
+    <!-- Altri elementi e contenuti della pagina -->
+  </div>
+
+  <div class="my-image-grid">
+    <div class="image-container">
+      <img src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/18821f3d-c7c4-4939-953f-4e42a0a49858.jpg?raw=true" alt="Image 1">
+    </div>
+    <div class="image-container">
+      <img src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/2faa4400-e78e-437b-bc62-0b7332f68c18.jpg?raw=true" alt="Image 2">
+    </div>
+    <div class="image-container">
+      <img src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/c96cfea6-4312-4d8d-98ef-4f37cbe27df9.jpg?raw=true" alt="Image 3">
+    </div>
+  </div>
+
+  <div>
+    <!-- Altri elementi e contenuti della pagina -->
+  </div>
+  
+  
+  
+ <h1 id="servizi"style="color:black; text-align: center">Servizi</h1>
+
+  
+  
+  
+  
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* CSS per rendere i quadranti responsive */
+    .quadrant {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #2a2c47;
+      text-align: center;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .quadrant img {
+      max-width: 100%;
+      height: auto;
+      margin-right: 20px;
+    }
+
+    h2, h3 {
+      color: #fff;
+    }
+  </style>
+  
+ 
+
+  <div class="quadrant">
+    <img src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/Opera-senza-titolo%201%20(2).png?raw=true" alt="Immagine 1">
+    <div>
+      <h2>Sollevamenti industriali</h2>
+      <h3>Il nostro servizio è focalizzato sul trasporto di elementi industriali di varie dimensioni e pesi, compresi macchinari, componenti, attrezzature e prodotti finiti. Collaboriamo strettamente con i nostri clienti per capire le loro esigenze specifiche e fornire soluzioni personalizzate che soddisfino i loro requisiti di trasporto.
+
+La nostra flotta di veicoli è appositamente progettata per il trasporto di carichi industriali. Disponiamo di camion e rimorchi speciali dotati di attrezzature di sicurezza avanzate e dispositivi di ancoraggio per garantire un trasporto sicuro e senza danni agli elementi industriali.</h3>
+    </div>
+  </div>
+
+  <div class="quadrant">
+    <img src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/Opera-senza-titolo%20(2).png?raw=true" alt="Immagine 2">
+    <div>
+      <h2>Trasporto e posa monoblocchi</h2>
+      <h3>Ci dedichiamo a offrire soluzioni complete per il trasporto, l'installazione e la messa in posa di monoblocchi prefabbricati, fornendo servizi affidabili e di alta qualità alle aziende e ai progetti di costruzione.
+
+La nostra esperienza e competenza nel settore ci consentono di gestire con successo l'intero processo di trasporto e posa dei monoblocchi. Collaboriamo strettamente con i nostri clienti per capire le loro esigenze specifiche e sviluppare soluzioni personalizzate che soddisfino i requisiti del progetto.</h3>
+    </div>
+  </div>
+
+  <div class="quadrant">
+    <img src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/Opera-senza-titolo%204%20(1).png?raw=true" alt="Immagine 3">
+    <div>
+      <h2>Trasporto e posa maxi schermi a led</h2>
+      <h3>L'azienda Zambano Trasporti si occupa anche di trasporto e posa Maxi Schermi a LED. Si tratta di un punto di riferimento nel settore dei trasporti e dell'installazione di grandi schermi a LED. Siamo specializzati nell'offrire soluzioni complete per il trasporto, l'installazione e la messa in posa di maxi schermi a LED, fornendo servizi professionali e di alta qualità per eventi, spettacoli, manifestazioni e progetti di comunicazione visiva.</h3>
+    </div>
+  </div>
+
+  <div class="quadrant">
+    <img src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/Opera-senza-titolo%205.png?raw=true" alt="Immagine 4">
+    <div>
+      <h2>Trasporto e posa case in legno</h2>
+      <h3>La nostra esperienza e competenza nel settore delle costruzioni in legno ci permettono di gestire con successo tutte le fasi del processo di trasporto e posa delle case di legno. 
+La nostra flotta di veicoli è appositamente attrezzata per il trasporto sicuro e protetto delle componenti delle case di legno prefabbricate. Abbiamo mezzi specializzati con gru e attrezzature di sollevamento che garantiscono un carico e uno scarico sicuri. I nostri autisti e operatori sono altamente qualificati e addestrati per maneggiare in modo adeguato i componenti delle case di legno durante il trasporto.</h3>
+    </div>
+  </div>
+
+  <div class="quadrant">
+    <img src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/Opera-senza-titolo%206.png?raw=true" alt="Immagine 5">
+    <div>
+      <h2>Trasporto e posa opere d'arte</h2>
+      <h3>Con una profonda passione per l'arte e un impegno per la cura e la sicurezza delle opere, offriamo servizi personalizzati per soddisfare le esigenze di artisti, collezionisti e istituzioni culturali.
+
+La nostra esperienza e competenza nel settore delle opere d'arte ci consentono di affrontare con successo le sfide logistiche del trasporto e della posa. Ogni opera d'arte viene trattata con il massimo rispetto e attenzione, sviluppando soluzioni su misura che soddisfino le specifiche esigenze di ciascuna opera.</h3>
+    </div>
+  </div>
+
+  <div class="quadrant">
+    <img src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/Opera-senza-titolo%203%20(1).png?raw=true" alt="Immagine 6">
+    <div>
+      <h2>Trasporto e posa alberi secolari</h2>
+      <h3> Trasporto e all'installazione di alberi di varie dimensioni e tipologie. Siamo specializzati nel fornire soluzioni complete per il trasporto, la posa e la cura degli alberi, garantendo una corretta integrazione nel paesaggio urbano o naturale.
+
+La nostra esperienza e competenza nel campo degli alberi ci consentono di affrontare con successo i complessi processi di trasporto e posa. </h3>
+    </div>
+  </div>
+
+  <div class="quadrant">
+    <img src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/Opera-senza-titolo%202%20(2).png?raw=true" alt="Immagine 7">
+    <div>
+      <h2>Trasporto e posa lastre in pietra</h2>
+      <h3>Siamo specializzati nel fornire soluzioni complete per il trasporto, la posa e la lavorazione di lastre in pietra, garantendo risultati di alta qualità e un'estetica impeccabile.</h3>
+    </div>
+  </div>
+
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .image-container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .image-container img {
+      width: 25%;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .contact-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    .contact-container .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 900px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      overflow: hidden;
+      padding: 20px;
+    }
+
+    .contact-container .sidebar {
+      flex: 1;
+      padding: 30px;
+      background-color: #344d83;
+      color: white;
+    }
+
+    .contact-container .sidebar .contact-info {
+      margin-bottom: 20px;
+    }
+
+    .contact-container .sidebar .contact-info h3 {
+      margin-top: 0;
+    }
+
+    .contact-container .sidebar .contact-info p {
+      margin: 10px 0;
+    }
+
+    .contact-container .sidebar .contact-info a {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .contact-container .contact-form-container {
+      flex: 1;
+      padding: 30px;
+      background-color: white;
+    }
+
+    .contact-container .contact-form-container h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact-container .contact-form-container .form-group {
+      margin-bottom: 20px;
+    }
+
+    .contact-container .contact-form-container .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .contact-container .contact-form-container .form-group input[type="text"],
+    .contact-container .contact-form-container .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .contact-container .contact-form-container .form-group button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #344d83;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 600px) {
+      .contact-container .container {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .contact-container .sidebar {
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .contact-container .contact-form-container {
+        padding: 20px;
+      }
+    }
+
+    .copyright {
+      background-color: #2a2c47;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+      font-size: 19px;
+      margin-top: 30px;
+    }
+  </style>
+
+  
+  
+
+  <h1 id="dove" style="color:black; text-align: center">Contatti</h1>
+<h2 style="text-align: center; color:black">Via Carso, 10 - 10092 Beinasco (TO)</h2>
+
+
+  <div class="image-container">
+   <img src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/Immagine%20maps.png?raw=true" alt="Immagine" />
+  </div>
+
+  <div class="contact-container">
+    <div class="container">
+      <div class="sidebar">
+        <div class="contact-info">
+           <h1 id="contatti"style="color:White; text-align: center">Contatti</h1>
+          <p>Telefono: 0113589502 </p>
+          <p>Email: zambano.trasporti@gmail.com</p>
+          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://www.facebook.com/">Facebook</a>
+        </div>
+      </div>
+      <div class="contact-form-container">
+        <h1 id="servizi"style="color:black; text-align: center">Scrivici per un preventivo</h1>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Inserisci la tua email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Messaggio:</label>
+            <textarea id="message" name="message" placeholder="Inserisci il tuo messaggio" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Invia</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    &copy; 2023 Zambano Trasporti. Tutti i diritti riservati.
+  </div>
+</body>
+ 
+  <style>
+    .scroll-to-top {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      width: 50px;
+      height: 50px;
+      background-color: #2a2c47;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .scroll-to-top:hover {
+      background-color: #777;
+    }
+
+    .scroll-to-top .arrow-icon {
+      display: block;
+      font-size: 24px;
+      margin-top: 10px;
+    }
+  </style>
+
+
+  
+  
+  <!-- Tasto scroll-to-top -->
+  <button onclick="scrollToTop()" class="scroll-to-top" id="scrollToTopButton">
+    <span class="arrow-icon">&#8593;</span>
+  </button>
+
+  <script>
+    // Funzione per tornare in cima alla pagina
+    function scrollToTop() {
+      document.body.scrollTop = 0; // Per i browser Safari
+      document.documentElement.scrollTop = 0; // Per gli altri browser
+    }
+
+    // Mostra o nascondi il tasto in base allo scroll della pagina
+    window.onscroll = function() { scrollFunction() };
+
+    function scrollFunction() {
+      var scrollToTopButton = document.getElementById("scrollToTopButton");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopButton.style.display = "block";
+      } else {
+        scrollToTopButton.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

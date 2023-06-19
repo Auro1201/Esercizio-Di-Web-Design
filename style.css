@@ -50,14 +50,16 @@
 }
 
 .menu-list {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  order: -1;
-  top: 100%;
-  z-index: 2;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 70px; /* Imposta un valore che desideri per spostare la tendina più in alto */
+  right: 0;
+  background-color: #2a2c47;
+  color: #fff;
+  padding: 10px;
 }
+
 
 .menu-list li {
   margin: 0 10px;

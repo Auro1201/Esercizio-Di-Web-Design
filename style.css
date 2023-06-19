@@ -14,6 +14,12 @@
   font-size: 60px;
   color:white;
 }
+@media (max-width: 768px) {
+  .title {
+    display: none;
+  }
+}
+
 
 
 /* Stili per il menu */
@@ -25,32 +31,82 @@
   color: #fff;
   height: 70px;
   padding: 0 5px;
-  
 }
 
-.menu ul {
+.menu-icon {
+  display: none;
+}
+
+.menu-icon-line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 4px;
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-list {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
-  
+  order: -1;
+  top: 100%;
+  z-index: 2;
 }
 
-.menu li {
+.menu-list li {
   margin: 0 10px;
 }
 
-.menu a {
+.menu-list a {
   color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 10px;
 }
+
+/* Stili per la responsività */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+    order: 2;
+    margin-right: 10px;
+  }
+
+  .menu-icon-line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 4px;
+    transition: transform 0.3s ease;
+  }
+
+  .menu-toggle:checked ~ .menu-list {
+    display: flex;
+  }
+
+  .menu-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #2a2c47;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .menu-list li {
+    margin: 10px 0;
+  }
+}
+
 
 /* Stili per il contenuto */
 .content {
@@ -155,21 +211,4 @@
   cursor: pointer;
 }
 
-/* Regole per la responsività */
-@media (max-width: 768px) {
-  /* Stili diversi per dispositivi con larghezza massima di 768px */
-  .center {
-    height: auto;
-  }
 
-  .logo {
-    height: 80px;
-  }
-
-  .logo img {
-    max-height: 100%;
-    max-width: 100%;
-  }
-
-  .logo h1 {
-   

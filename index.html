@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Titolo della pagina</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
-<link rel="stylesheet" href="style.css">
- 
+  <style>
+    /* Stili per il logo */
+    .container {
+      text-align: center;
+    }
+    
+    .logo {
+      display: block;
+      margin: 2 auto;
+    }
+    
+    .title {
+      text-align: left;
+      margin-top: 70px;
+      font-size: 60px;
+      color: white;
+    }
+    
+    /* Stili per la responsività */
+    @media (max-width: 768px) {
+      /* Stili diversi per dispositivi con larghezza massima di 768px */
+      .center {
+        height: auto;
+      }
+    
+      .logo {
+        height: 200px;
+      }
+    
+      .logo img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+    
+      .title {
+        display: none; /* Nascondi l'elemento h1.title */
+      }
+    }
   </style>
 </head>
 <body>
@@ -14,10 +49,19 @@
     <img class="logo" src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/logo%20bianco.png?raw=true" alt="Logo">
     <h1 class="title">ZAMBANO TRASPORTI</h1>
   </div>
+</body>
+</html>
 
-  <nav class="menu">
-    <ul>
-      <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+
+<nav class="menu">
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+  <label for="menu-toggle" class="menu-icon">
+    <span class="menu-icon-line"></span>
+    <span class="menu-icon-line"></span>
+    <span class="menu-icon-line"></span>
+  </label>
+  <ul class="menu-list">
+          <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
       <li><a href="#lavori"><i class="fas fa-camera-retro"></i> I nostri lavori</a></li>
       <li><a href="#servizi"><i class="fas fa-industry"></i> Servizi</a></li>
   
@@ -27,20 +71,38 @@
     </ul>
   </nav>
 
-  <main class="content">
-    <h1 id="home" style="color:white; font-family: 'Water Brush', sans-serif;">Benvenuti nella nostra azienda</h1>
-    <p style="color:white;">Benvenuti a Zamabno Trasporti S.A.S!
 
-Siamo un'azienda familiare con una storia di successo che abbraccia oltre 60 anni di esperienza nel settore dei trasporti. L'azienda nasce nel 1963 per mano di Edmondo Zambano per poi successivamente passare al geometra Anselmo Zambano dopo un pò di anni. Sin dalla nostra fondazione, ci siamo dedicati a fornire soluzioni affidabili e su misura per le esigenze di trasporto dei nostri clienti. Nel corso degli anni, ci siamo evoluti e specializzati per diventare leader nel trasporto di oggetti di grandi dimensioni.
+ <main class="content">
+  <h1 id="home" style="color:white; font-family: 'Water Brush', sans-serif;">Benvenuti nella nostra azienda</h1>
+  <p style="color:white;">Benvenuti a Zamabno Trasporti S.A.S!</p>
+  <p style="color:white;">Siamo un'azienda familiare con una storia di successo che abbraccia oltre 60 anni di esperienza nel settore dei trasporti. L'azienda nasce nel 1963 per mano di Edmondo Zambano per poi successivamente passare al geometra Anselmo Zambano dopo un pò di anni.</p>
+  <p style="color:white;">Sin dalla nostra fondazione, ci siamo dedicati a fornire soluzioni affidabili e su misura per le esigenze di trasporto dei nostri clienti. Nel corso degli anni, ci siamo evoluti e specializzati per diventare leader nel trasporto di oggetti di grandi dimensioni.</p>
+  <p style="color:white;">La nostra passione per l'eccellenza e l'attenzione ai dettagli ci hanno permesso di sviluppare una flotta di veicoli all'avanguardia e di formare un piccolo team di esperti altamente qualificati.</p>
+  <p style="color:white;">Siamo orgogliosi di poter offrire una vasta gamma di servizi di trasporto, inclusi trasporti pesanti, trasporti speciali e trasporti eccezionali.</p>
+  <p style="color:white;">Sappiamo che ogni carico è unico e richiede un approccio personalizzato. I nostri professionisti altamente specializzati lavorano a stretto contatto con i nostri clienti per capire le loro esigenze specifiche e offrire soluzioni su misura.</p>
+  <p style="color:white;">Dalla pianificazione logistica alla gestione delle autorizzazioni, ci occupiamo di tutto il processo per garantire un trasporto sicuro e puntuale.</p>
+  <p style="color:white;">La nostra reputazione si basa sull'affidabilità, sull'efficienza e sulla cura che mettiamo in ogni trasporto che gestiamo. Siamo consapevoli dell'importanza dei vostri carichi e ci impegniamo a trattarli con la massima attenzione e sicurezza.</p>
+  <p style="color:white;">La vostra soddisfazione è la nostra priorità assoluta.</p>
+  <p style="color:white;">Se state cercando una società di trasporti affidabile, professionale e con esperienza nel settore dei trasporti di oggetti di grandi dimensioni, Zamabno Trasporti è qui per servirvi.</p>
+  <p style="color:white;">Contattateci oggi stesso per discutere delle vostre esigenze di trasporto e scoprire come possiamo aiutarvi a raggiungere i vostri obiettivi.</p>
+</main>
+<style>
+@media (max-width: 600px) {
+  .content {
+    padding: 0 10px;
+  }
+  .content h1 {
+    font-size: 24px !important;
+    max-width: none !important;
+  }
+  .content p {
+    font-size: 12px !important;
+    max-width: none !important;
+  }
+}
 
-La nostra passione per l'eccellenza e l'attenzione ai dettagli ci hanno permesso di sviluppare una flotta di veicoli all'avanguardia e di formare un piccolo team di esperti altamente qualificati. Siamo orgogliosi di poter offrire una vasta gamma di servizi di trasporto, inclusi trasporti pesanti, trasporti speciali e trasporti eccezionali.
 
-Sappiamo che ogni carico è unico e richiede un approccio personalizzato. I nostri professionisti altamente specializzati lavorano a stretto contatto con i nostri clienti per capire le loro esigenze specifiche e offrire soluzioni su misura. Dalla pianificazione logistica alla gestione delle autorizzazioni, ci occupiamo di tutto il processo per garantire un trasporto sicuro e puntuale.
-
-La nostra reputazione si basa sull'affidabilità, sull'efficienza e sulla cura che mettiamo in ogni trasporto che gestiamo. Siamo consapevoli dell'importanza dei vostri carichi e ci impegniamo a trattarli con la massima attenzione e sicurezza. La vostra soddisfazione è la nostra priorità assoluta.
-
-Se state cercando una società di trasporti affidabile, professionale e con esperienza nel settore dei trasporti di oggetti di grandi dimensioni, Zamabno Trasporti è qui per servirvi. Contattateci oggi stesso per discutere delle vostre esigenze di trasporto e scoprire come possiamo aiutarvi a raggiungere i vostri obiettivi.</p>
-  </main>
+</style>
 
 
 
@@ -175,28 +237,40 @@ La nostra missione è fornire servizi di trasporto di oggetti di grandi dimensio
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    /* Stili personalizzati per il grid delle immagini */
+ <style>
+  /* Stili personalizzati per il grid delle immagini */
+  .my-image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .my-image-grid .image-container {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
+
+  .my-image-grid .image-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Stili per modalità mobile */
+  @media (max-width: 768px) {
     .my-image-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      flex-direction: column; /* Le immagini vengono disposte verticalmente */
     }
 
     .my-image-grid .image-container {
-      flex-basis: calc(33.33% - 20px);
-      margin-bottom: 20px;
+      flex-basis: 100%; /* Le immagini occupano tutta la larghezza */
     }
+  }
 
-    .my-image-grid .image-container img {
-      width: 100%;
-      height: auto;
-    }
+  /* Altri stili della tua pagina */
+  /* ... */
 
-    /* Altri stili della tua pagina */
-    /* ... */
+</style>
 
-  </style>
 
 
   <div>

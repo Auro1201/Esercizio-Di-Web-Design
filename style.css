@@ -54,11 +54,12 @@
   flex-direction: column;
   position: absolute;
   top: 70px; /* Imposta un valore che desideri per spostare la tendina più in alto */
-  right: 0;
+  right: -5px; /* Imposta un valore che desideri per posizionare la tendina di fianco alla striscia blu */
   background-color: #2a2c47;
   color: #fff;
   padding: 10px;
 }
+
 
 
 .menu-list li {

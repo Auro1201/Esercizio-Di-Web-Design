@@ -4,8 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Titolo della pagina</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
-  <link rel="stylesheet" href="style.css">
   <style>
     /* Stili per il logo */
     .container {
@@ -539,99 +537,174 @@ La nostra esperienza e competenza nel campo degli alberi ci consentono di affron
    <img src="https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/Immagine%20maps.png?raw=true" alt="Immagine" />
   </div>
 
-  <div class="contact-container">
-    <div class="container">
-      <div class="sidebar">
-        <div class="contact-info">
-           <h1 id="contatti"style="color:White; text-align: center">Contattaci</h1>
-          <p>Telefono: 0113589502 </p>
-          <p>Email: zambano.trasporti@gmail.com</p>
-          <a href="https://www.instagram.com/">Instagram</a>
-          <a href="https://www.facebook.com/">Facebook</a>
-        </div>
-      </div>
-      <div class="contact-form-container">
-        <h1 id="servizi"style="color:black; text-align: center">Scrivici per un preventivo</h1>
-        <form action="#" method="post">
-          <div class="form-group">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" placeholder="Inserisci la tua email" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Messaggio:</label>
-            <textarea id="message" name="message" placeholder="Inserisci il tuo messaggio" required></textarea>
-          </div>
-          <div class="form-group">
-            <button type="submit">Invia</button>
-          </div>
-        </form>
-      </div>
-    </div>
+
+<style>
+  /* Stile di base per la form */
+  .contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+     background-color: rgba(52, 77, 131, 0.8); /* Opacità impostata a 0.5 (50%) */
+  }
+
+  .contact-form {
+    width: 50%;
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+
+  /* Stile per la scritta sopra la casella di contatto */
+  .contact-form h2 {
+    margin-top: 0;
+  }
+
+  /* Stile per i campi della form */
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  /* Stile per il pulsante di invio */
+  .contact-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #2a2c47;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Stile per il pulsante di invio al passaggio del mouse */
+  .contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  /* Stile per lo spazio contatti */
+  .contact-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    background-color: #f5f5f5;
+  }
+
+  .contact-info {
+    width: 50%;
+    text-align: center;
+  }
+
+  /* Stile per il titolo contatti */
+  .contact-info h3 {
+    margin-top: 0;
+  }
+
+  /* Stile per i campi contatti */
+  .contact-info p {
+    margin-bottom: 5px;
+  }
+
+  /* Stile per le immagini dei social media */
+  .contact-info img {
+    width: 30px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+</style>
+
+<div class="contact-form-container">
+  <div class="contact-form">
+    <h2  id="contatti" style="color:	black; text-align: center">Scrivici per un preventivo gratuito</h2>
+    <form action="/invia_preventivo" method="post">
+      <input type="text" name="nome" placeholder="Nome" required>
+      <input type="text" name="cognome" placeholder="Cognome" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="messaggio" placeholder="Messaggio" required></textarea>
+      <input type="submit" value="Invia richiesta">
+    </form>
   </div>
+</div>
+
+<div class="contact-info-container">
+  <div class="contact-info">
+    <h3  style="color:	black; text-align: center">Contatti</h3>
+    <p  style="color:	black; text-align: center">Numero di cellulare: 0113589502</p>
+    <p  style="color:black; text-align: center">Email: zambano.trasporti@gmail.com</p>
+    <p>
+      <a href="https://www.instagram.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
+      <a href="https://www.facebook.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt="Facebook"></a>
+    </p>
+  </div>
+</div>
+
+
 
   <div class="copyright">
     &copy; 2023 Zambano Trasporti. Tutti i diritti riservati.
   </div>
 </body>
  
-  <style>
-    .scroll-to-top {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 99;
-      width: 50px;
-      height: 50px;
-      background-color: #2a2c47;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      outline: none;
-      cursor: pointer;
+ <style>
+  .scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    background-color:#212238 rgba(42, 44, 71, 0.7); /* Colore di sfondo con trasparenza */
+    color: black;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .scroll-to-top:hover {
+    background-color: rgba(119, 119, 119, 0.7); /* Colore di sfondo con trasparenza al passaggio del mouse */
+    
+  }
+
+  .scroll-to-top .arrow-icon {
+    display: block;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+</style>
+
+<!-- Tasto scroll-to-top -->
+<button onclick="scrollToTop()" class="scroll-to-top" id="scrollToTopButton">
+  <span class="arrow-icon">⇧</span> <!-- Emoticon personalizzata -->
+</button>
+
+<script>
+  // Funzione per tornare in cima alla pagina
+  function scrollToTop() {
+    document.body.scrollTop = 0; // Per i browser Safari
+    document.documentElement.scrollTop = 0; // Per gli altri browser
+  }
+
+  // Mostra o nascondi il tasto in base allo scroll della pagina
+  window.onscroll = function() { scrollFunction() };
+
+  function scrollFunction() {
+    var scrollToTopButton = document.getElementById("scrollToTopButton");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollToTopButton.style.display = "block";
+    } else {
+      scrollToTopButton.style.display = "none";
     }
-
-    .scroll-to-top:hover {
-      background-color: #777;
-    }
-
-    .scroll-to-top .arrow-icon {
-      display: block;
-      font-size: 24px;
-      margin-top: 10px;
-    }
-  </style>
-
-
-  
-  
-  <!-- Tasto scroll-to-top -->
-  <button onclick="scrollToTop()" class="scroll-to-top" id="scrollToTopButton">
-    <span class="arrow-icon">&#8593;</span>
-  </button>
-
-  <script>
-    // Funzione per tornare in cima alla pagina
-    function scrollToTop() {
-      document.body.scrollTop = 0; // Per i browser Safari
-      document.documentElement.scrollTop = 0; // Per gli altri browser
-    }
-
-    // Mostra o nascondi il tasto in base allo scroll della pagina
-    window.onscroll = function() { scrollFunction() };
-
-    function scrollFunction() {
-      var scrollToTopButton = document.getElementById("scrollToTopButton");
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollToTopButton.style.display = "block";
-      } else {
-        scrollToTopButton.style.display = "none";
-      }
-    }
-  </script>
+  }
+</script>
 </body>
+
 </html>

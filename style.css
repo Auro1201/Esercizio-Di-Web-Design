@@ -90,7 +90,6 @@
   }
 }
 
-
 /* Stili per la responsività */
 @media (max-width: 768px) {
   .menu-icon {
@@ -115,7 +114,7 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 100%;
+    top: 50%;
     right: 0;
     background-color: #2a2c47;
     color: #fff;
@@ -145,10 +144,11 @@
   margin-bottom: 20px;
 }
 
+
 /* Foto scorrevoli */
 .slideshow-container {
   position: relative;
-  max-width: 70%;
+  max-width: 40%;
   margin: auto;
 }
 
@@ -207,6 +207,7 @@
 .box h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  
 }
 
 .box p {

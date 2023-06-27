@@ -1,3 +1,41 @@
+ /* Stili per il logo */
+    .container {
+      text-align: center;
+    }
+    
+    .logo {
+      display: block;
+      margin: 2 auto;
+    }
+    
+    .title {
+      text-align: left;
+      margin-top: 70px;
+      font-size: 60px;
+      color: white;
+    }
+    
+    /* Stili per la responsività */
+    @media (max-width: 768px) {
+      /* Stili diversi per dispositivi con larghezza massima di 768px */
+      .center {
+        height: auto;
+      }
+    
+      .logo {
+        height: 200px;
+      }
+    
+      .logo img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+    
+      .title {
+        display: none; /* Nascondi l'elemento h1.title */
+      }
+    }
+  
 /* Stili per il logo */
 .container {
   text-align: center;
@@ -127,6 +165,67 @@
 }
 
 
+@media (max-width: 600px) {
+  .content {
+    padding: 0 10px;
+  }
+  .content h1 {
+    font-size: 24px !important;
+    max-width: none !important;
+  }
+  .content p {
+    font-size: 12px !important;
+    max-width: none !important;
+  }
+}
+
+
+
+  /* Stili personalizzati per il grid delle immagini */
+  .my-image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .my-image-grid .image-container {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
+
+  .my-image-grid .image-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Stili per modalità mobile */
+  @media (max-width: 768px) {
+    .my-image-grid {
+      flex-direction: column; /* Le immagini vengono disposte verticalmente */
+    }
+
+    .my-image-grid .image-container {
+      flex-basis: 100%; /* Le immagini occupano tutta la larghezza */
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
 /* Stili per il contenuto */
 .content {
   padding: 100px;
@@ -231,5 +330,282 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+
+    /* CSS per rendere i quadranti responsive */
+    .quadrant {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #2a2c47;
+      text-align: center;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .quadrant img {
+      max-width: 100%;
+      height: auto;
+      margin-right: 20px;
+    }
+
+    h2, h3 {
+      color: #fff;
+    }
+ 
+  
+
+
+
+
+  /* Stile di base per la form */
+  .contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+     background-color: rgba(52, 77, 131, 0.8); /* Opacità impostata a 0.5 (50%) */
+  }
+
+  .contact-form {
+    width: 50%;
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+
+  /* Stile per la scritta sopra la casella di contatto */
+  .contact-form h2 {
+    margin-top: 0;
+  }
+
+  /* Stile per i campi della form */
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  /* Stile per il pulsante di invio */
+  .contact-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #2a2c47;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Stile per il pulsante di invio al passaggio del mouse */
+  .contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  /* Stile per lo spazio contatti */
+  .contact-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    background-color: #f5f5f5;
+  }
+
+  .contact-info {
+    width: 50%;
+    text-align: center;
+  }
+
+  /* Stile per il titolo contatti */
+  .contact-info h3 {
+    margin-top: 0;
+  }
+
+  /* Stile per i campi contatti */
+  .contact-info p {
+    margin-bottom: 5px;
+  }
+
+  /* Stile per le immagini dei social media */
+  .contact-info img {
+    width: 30px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+
+
+
+/* cOPYRIGHT*/
+   .image-container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+   }
+
+   .image-container img {
+      width: 25%;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+   }
+
+   .contact-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      margin-top: 20px;
+      margin-bottom: 30px;
+   }
+
+   .contact-container .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 900px;
+      background-color: rgba(52, 77, 131, 0.7); /* Opacità impostata a 0.5 (50%) */
+      border-radius: 5px;
+      overflow: hidden;
+      padding: 20px;
+   }
+
+   .contact-container .sidebar {
+      flex: 1;
+      padding: 30px;
+      background-color: #344d83;
+      color: white;
+   }
+
+   .contact-container .sidebar .contact-info {
+      margin-bottom: 20px;
+   }
+
+   .contact-container .sidebar .contact-info h3 {
+      margin-top: 0;
+   }
+
+   .contact-container .sidebar .contact-info p {
+      margin: 10px 0;
+   }
+
+   .contact-container .sidebar .contact-info a {
+      display: block;
+      margin-bottom: 5px;
+   }
+
+   .contact-container .contact-form-container {
+      flex: 1;
+      padding: 30px;
+      background-color: white;
+   }
+
+   .contact-container .contact-form-container h2 {
+      margin-bottom: 20px;
+   }
+
+   .contact-container .contact-form-container .form-group {
+      margin-bottom: 20px;
+   }
+
+   .contact-container .contact-form-container .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+   }
+
+   .contact-container .contact-form-container .form-group input[type="text"],
+   .contact-container .contact-form-container .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+   }
+
+   .contact-container .contact-form-container .form-group button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #344d83;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+   }
+
+   @media screen and (max-width: 600px) {
+      .contact-container .container {
+         flex-direction: column;
+         padding: 20px;
+      }
+
+      .contact-container .sidebar {
+         padding: 20px;
+         margin-bottom: 20px;
+      }
+
+      .contact-container .contact-form-container {
+         padding: 20px;
+      }
+      
+      .image-container img {
+         width: 80%;
+         height: auto;
+      }
+   }
+
+   .copyright {
+      background-color: #2a2c47;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+      font-size: 19px;
+      margin-top: 30px;
+      line-height: 1.5;
+   }
+
+
+
+ 
+  .scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    background-color:#212238 rgba(42, 44, 71, 0.7); /* Colore di sfondo con trasparenza */
+    color: black;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .scroll-to-top:hover {
+    background-color: rgba(119, 119, 119, 0.7); /* Colore di sfondo con trasparenza al passaggio del mouse */
+    
+  }
+
+  .scroll-to-top .arrow-icon {
+    display: block;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
 
 

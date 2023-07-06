@@ -175,17 +175,20 @@
 
 @media (max-width: 600px) {
   .content {
-    padding: 0 30px;
+    padding: 0;
   }
   .content h1 {
     font-size: 24px !important;
     max-width: none !important;
+    word-wrap: break-word; /* Permetti la divisione delle parole lunghe su più righe se necessario */
   }
   .content p {
     font-size: 12px !important;
     max-width: none !important;
+    word-wrap: break-word; /* Permetti la divisione delle parole lunghe su più righe se necessario */
   }
 }
+
 
 
 

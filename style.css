@@ -186,9 +186,14 @@
   .content p {
     max-width: none;
     word-wrap: break-word;
-    margin: 10px 0; /* Aggiungi margini superiori e inferiori di 10px */
+    font-size: 10px;
+    white-space: normal;
+    width: 100%;
+    margin: 5px 0; /* Riduci i margini superiori e inferiori a 5px */
   }
 }
+
+
 
 
   /* Stili personalizzati per il grid delle immagini */

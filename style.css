@@ -1,5 +1,4 @@
-
-   /* Stili per il logo */
+  /* Stili per il logo */
     .container {
       text-align: center;
     }
@@ -174,15 +173,16 @@
 
 
 @media (max-width: 600px) {
-  .content p {
-    padding: 0 5px; /* Riduci il padding laterale */
-    overflow-x: auto; /* Aggiungi la barra di scorrimento orizzontale se il testo supera la larghezza disponibile */
+  .content {
+    padding: 0 30px;
   }
-  .content h1,
-  .content p {
+  .content h1 {
+    font-size: 24px !important;
     max-width: none !important;
-    word-wrap: break-word; /* Permetti la divisione delle parole lunghe su più righe se necessario */
-    margin: 0; /* Rimuovi i margini */
+  }
+  .content p {
+    font-size: 12px !important;
+    max-width: none !important;
   }
 }
 
@@ -687,7 +687,5 @@ body {
     font-size: 24px;
   }
 
-
-      
 
 

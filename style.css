@@ -175,19 +175,20 @@
 
 
 .content {
-    padding: 0 30px;
-  }
+  padding: 0 30px;
+}
 
-  @media (max-width: 600px) {
-    .content {
-      padding: 0; /* Rimuovi il padding laterale per consentire all'elemento di espandersi in larghezza */
-    }
-    .content h1,
-    .content p {
-      max-width: none; /* Rimuovi la larghezza massima per consentire all'elemento di espandersi in larghezza */
-      word-wrap: break-word; /* Permetti la divisione delle parole lunghe su più righe se necessario */
-    }
+@media (max-width: 600px) {
+  .content {
+    padding: 0;
   }
+  .content h1,
+  .content p {
+    max-width: none;
+    word-wrap: break-word;
+    margin: 10px 0; /* Aggiungi margini superiori e inferiori di 10px */
+  }
+}
 
 
   /* Stili personalizzati per il grid delle immagini */

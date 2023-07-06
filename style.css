@@ -181,9 +181,7 @@
   .content p {
     max-width: none !important;
     word-wrap: break-word; /* Permetti la divisione delle parole lunghe su più righe se necessario */
-    white-space: nowrap; /* Impedisce il wrap del testo su più righe */
-    overflow: hidden; /* Nasconde il testo che supera la larghezza disponibile */
-    text-overflow: ellipsis; /* Aggiunge puntini di sospensione per indicare il testo troncato */
+    white-space: normal; /* Permetti al testo di andare a capo su più righe */
     margin: 0; /* Rimuovi i margini */
   }
 }

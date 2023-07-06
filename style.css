@@ -1,6 +1,5 @@
 
- 
-      /* Stili per il logo */
+    /* Stili per il logo */
     .container {
       text-align: center;
     }
@@ -451,7 +450,7 @@
 
 
 /* cOPYRIGHT*/
-    .image-container {
+      .image-container {
       height: 100%;
       display: flex;
       justify-content: center;
@@ -683,5 +682,7 @@ body {
   }
 
 
+ 
+      
 
 

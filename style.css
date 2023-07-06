@@ -1,6 +1,6 @@
 
  
-    /* Stili per il logo */
+      /* Stili per il logo */
     .container {
       text-align: center;
     }
@@ -451,12 +451,20 @@
 
 
 /* cOPYRIGHT*/
-   .image-container {
+     .image-container {
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-bottom: 30px;
+   }
+
+   /* Media query for mobile devices */
+   @media (max-width: 767px) {
+      .image-container img {
+         max-width: 100%;
+         height: auto;
+      }
    }
 
    .image-container img {
@@ -610,7 +618,7 @@
   }
 
 body {
-  background-image: url("https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/18821f3d-c7c4-4939-953f-4e42a0a49858.jpg?raw=true");
+  background-image: url("https://github.com/Auro1201/Esercizio-Di-Web-Design/blob/main/ansi/camion%20mod.jpg?raw=true");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

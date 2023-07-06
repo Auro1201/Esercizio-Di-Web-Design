@@ -174,20 +174,20 @@
 }
 
 
-@media (max-width: 600px) {
-  .content {
+.content {
     padding: 0 30px;
   }
-  .content h1 {
-    font-size: 24px !important;
-    max-width: none !important;
-  }
-  .content p {
-    font-size: 12px !important;
-    max-width: none !important;
-  }
-}
 
+  @media (max-width: 600px) {
+    .content {
+      padding: 0; /* Rimuovi il padding laterale per consentire all'elemento di espandersi in larghezza */
+    }
+    .content h1,
+    .content p {
+      max-width: none; /* Rimuovi la larghezza massima per consentire all'elemento di espandersi in larghezza */
+      word-wrap: break-word; /* Permetti la divisione delle parole lunghe su più righe se necessario */
+    }
+  }
 
 
   /* Stili personalizzati per il grid delle immagini */

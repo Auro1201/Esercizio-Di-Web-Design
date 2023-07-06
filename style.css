@@ -175,7 +175,7 @@
 
 @media (max-width: 600px) {
   .content {
-    padding: 0 10px; /* Riduci il padding laterale */
+    padding: 0 5px; /* Riduci il padding laterale */
     overflow-x: auto; /* Aggiungi la barra di scorrimento orizzontale se il testo supera la larghezza disponibile */
   }
   .content h1,

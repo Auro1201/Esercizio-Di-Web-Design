@@ -176,15 +176,16 @@
 @media (max-width: 600px) {
   .content {
     padding: 0 10px; /* Riduci il padding laterale */
+    overflow-x: auto; /* Aggiungi la barra di scorrimento orizzontale se il testo supera la larghezza disponibile */
   }
   .content h1,
   .content p {
     max-width: none !important;
     word-wrap: break-word; /* Permetti la divisione delle parole lunghe su più righe se necessario */
-    white-space: normal; /* Permetti al testo di andare a capo su più righe */
     margin: 0; /* Rimuovi i margini */
   }
 }
+
 
 
   /* Stili personalizzati per il grid delle immagini */

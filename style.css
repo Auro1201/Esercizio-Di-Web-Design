@@ -1,4 +1,4 @@
-  /* Stili per il logo */
+   /* Stili per il logo */
     .container {
       text-align: center;
     }
@@ -185,14 +185,6 @@
     max-width: none !important;
   }
 }
-
-/* Visione, Missione e Valori */
-.content p {
-  display: centre;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-}
-
 
 
 
@@ -694,6 +686,5 @@ body {
     justify-content: center;
     font-size: 24px;
   }
-
 
 

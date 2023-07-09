@@ -1,48 +1,3 @@
-   /* Stili per il logo */
-    .container {
-      text-align: center;
-    }
-    
-    .logo {
-      display: block;
-      margin: 2 auto;
-    }
-    
-    .title {
-      text-align: left;
-      margin-top: 70px;
-      font-size: 60px;
-      color: white;
-    }
-    
-
-@media only screen and (max-width: 480px) {
-  h2 {
-    font-size: 30px;
-    padding: 5px;
-  }
-}
-    /* Stili per la responsività */
-    @media (max-width: 768px) {
-      /* Stili diversi per dispositivi con larghezza massima di 768px */
-      .center {
-        height: auto;
-      }
-    
-      .logo {
-        height: 200px;
-      }
-    
-      .logo img {
-        max-height: 100%;
-        max-width: 100%;
-      }
-    
-      .title {
-        display: none; /* Nascondi l'elemento h1.title */
-      }
-    }
-  
 /* Stili per il logo */
 .container {
   text-align: center;
@@ -133,7 +88,56 @@
   .menu-list li {
     margin: 10px 0;
   }
+}  
+
+/* Stili per il logo */
+    .container {
+      text-align: center;
+    }
+    
+    .logo {
+      display: block;
+      margin: 2 auto;
+    }
+    
+    .title {
+      text-align: left;
+      margin-top: 70px;
+      font-size: 60px;
+      color: white;
+    }
+    
+
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 30px;
+    padding: 5px;
+  }
 }
+
+
+    /* Stili per la responsività */
+    @media (max-width: 768px) {
+      /* Stili diversi per dispositivi con larghezza massima di 768px */
+      .center {
+        height: auto;
+      }
+    
+      .logo {
+        height: 200px;
+      }
+    
+      .logo img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+    
+      .title {
+        display: none; /* Nascondi l'elemento h1.title */
+      }
+    }
+  
+
 
 /* Stili per la responsività */
 @media (max-width: 768px) {
@@ -686,5 +690,3 @@ body {
     justify-content: center;
     font-size: 24px;
   }
-
-

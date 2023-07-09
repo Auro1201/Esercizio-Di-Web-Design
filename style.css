@@ -20,6 +20,30 @@
   }
 }
 
+/* Stili per il logo */
+    .container {
+      text-align: center;
+    }
+    
+    .logo {
+      display: block;
+      margin: 2 auto;
+    }
+    
+    .title {
+      text-align: left;
+      margin-top: 70px;
+      font-size: 60px;
+      color: white;
+    }
+    
+
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 30px;
+    padding: 5px;
+  }
+}
 
 
 .menu {
@@ -90,30 +114,6 @@
   }
 }  
 
-/* Stili per il logo */
-    .container {
-      text-align: center;
-    }
-    
-    .logo {
-      display: block;
-      margin: 2 auto;
-    }
-    
-    .title {
-      text-align: left;
-      margin-top: 70px;
-      font-size: 60px;
-      color: white;
-    }
-    
-
-@media only screen and (max-width: 480px) {
-  h2 {
-    font-size: 30px;
-    padding: 5px;
-  }
-}
 
 
     /* Stili per la responsività */

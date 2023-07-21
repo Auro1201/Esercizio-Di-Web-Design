@@ -1,5 +1,10 @@
-# Esercizio-Di-Web-Design
+# Sito Web dell'azienda Zambano trasporti
 Esercizio di Web Design
+Anno Accademico 2022-2023
+Aurora Severin
+n. matricola 846
+Corso di Web Design
+Professore Baccan Matteo
 ## Scopo del repository
 Realizzazione di un sito per un'azienda di trasporti
 

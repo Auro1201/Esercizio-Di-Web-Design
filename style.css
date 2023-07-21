@@ -343,54 +343,72 @@ p {
  
   
 
+ body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Style for the whole page */
+    .page-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: rgba(52, 77, 131, 0.8); /* Opacity set to 0.8 (80%) */
+    }
+
+    /* Style for the contact form */
+    .contact-form {
+      width: 50%;
+      padding: 20px;
+      background-color: #f5f5f5;
+      text-align: center;
+    }
+
+    /* Style for the form fields */
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    /* Style for the submit button */
+    .contact-form input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #2a2c47;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* Style for the submit button on hover */
+    .contact-form input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    /* Style for the cookie label */
+    .contact-form .cookie-label {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      margin-bottom: 10px;
+      color:black
+    }
+
+    .contact-form .cookie-label input[type="checkbox"] {
+      margin-right: 5px;
+    }
 
 
 
-  /* Stile di base per la form */
-  .contact-form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-     background-color: rgba(52, 77, 131, 0.8); /* Opacità impostata a 0.5 (50%) */
-  }
-
-  .contact-form {
-    width: 50%;
-    padding: 20px;
-    background-color: #f5f5f5;
-    text-align: center;
-  }
-
- 
-  /* Stile per i campi della form */
-  .contact-form input[type="text"],
-  .contact-form input[type="email"],
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-
-  /* Stile per il pulsante di invio */
-  .contact-form input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #2a2c47;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  /* Stile per il pulsante di invio al passaggio del mouse */
-  .contact-form input[type="submit"]:hover {
-    background-color: #45a049;
-  }
-
+  
   /* Stile per lo spazio contatti */
   .contact-info-container {
     display: flex;
@@ -583,7 +601,5 @@ p {
     font-size: 24px;
     margin-top: 10px;
   }
-
-
 
 

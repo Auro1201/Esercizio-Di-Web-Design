@@ -29,10 +29,10 @@ Lo scopo è quello di realizzare un sito monopagina responsive per l'azienda "Za
 * _CSS esterno_
 * _JavaScript_
 
-  ## Siti e strumenti utilizzati per la realizzazione della pagina
-  * _Codepen.io_
-  * _Chat Gpt_
-  * _Pizza Gpt_
+## Siti e strumenti utilizzati per la realizzazione della pagina
+* _Codepen.io_
+* _Chat Gpt_
+* _Pizza Gpt_
 
 ## Siti e strumenti utilizzati per il controllo della qualità della pagina
  * _PageSpeed Insights_

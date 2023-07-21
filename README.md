@@ -24,7 +24,7 @@ Lo scopo è quello di realizzare un sito monopagina responsive per l'azienda "Za
 * _Social e contatti dell'azienda_
 * _Copyright della pagina_
 
-## Elementi principali della pagina
+## Caratteristiche struttura e elementi pagina
 * _Html5_
 * _CSS esterno_
 * _JavaScript_

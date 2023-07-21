@@ -239,18 +239,21 @@ La nostra esperienza e competenza nel campo degli alberi ci consentono di affron
 
 
 
-<div class="contact-form-container">
-  <div class="contact-form">
-    <h2  id="contatti" style="color:	black; text-align: center">Scrivici per un preventivo gratuito</h2>
-    <form action="/invia_preventivo" method="post">
-      <input type="text" name="nome" placeholder="Nome" required>
-      <input type="text" name="cognome" placeholder="Cognome" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <textarea name="messaggio" placeholder="Messaggio" required></textarea>
-      <input type="submit" value="Invia richiesta">
-    </form>
+<div class="page-container">
+    <div class="contact-form">
+      <h2 id="contatti" style="color: black; text-align: center">Scrivici per un preventivo gratuito</h2>
+      <form action="/invia_preventivo" method="post">
+        <input type="text" name="nome" placeholder="Nome" required>
+        <input type="text" name="cognome" placeholder="Cognome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="messaggio" placeholder="Messaggio" required></textarea>
+        <label class="cookie-label">
+          <input type="checkbox" name="cookie_consent" required> Accetto l'utilizzo dei cookies
+        </label>
+        <input type="submit" value="Invia richiesta">
+      </form>
+    </div>
   </div>
-</div>
 
 <div class="contact-info-container">
   <div class="contact-info">
